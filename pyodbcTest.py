@@ -8,7 +8,7 @@ import pyodbc
 driver_name = "{ODBC Driver 17 for SQL Server}"
 
 server_name = "DESKTOP-7CB1RAA"
-database_name = "master"
+database_name = "CompanyX"
 username = "your_username"
 password = "your_password"
 
