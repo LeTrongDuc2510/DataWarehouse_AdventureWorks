@@ -41,7 +41,7 @@ def getFromFile(fname):
 
 
 def getAboveMinSup(itemSet, itemSetList, minSup, globalItemSetWithSup):
-    freqItemSet = set()
+    freqItemSet = dict()
     localItemSetWithSup = defaultdict(int)
 
     for item in itemSet:
@@ -51,9 +51,9 @@ def getAboveMinSup(itemSet, itemSetList, minSup, globalItemSetWithSup):
                 localItemSetWithSup[item] += 1
 
     for item, supCount in localItemSetWithSup.items():
-        support = float(supCount / len(itemSetList))
+        support = round(supCount / len(itemSetList), 2)
         if(support >= minSup):
-            freqItemSet.add(item)
+            freqItemSet[item] = support
 
     return freqItemSet
 
