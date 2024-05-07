@@ -1,0 +1,6 @@
+global_sup = 0.04  # sigma_g
+local_sup = 0.024   # sigma_l 
+temporal_sup = 3  # sigma_t 3 days
+conf_thres = 0.5  # sigma_c 
+sf = 1.3
+gf = 0.7
